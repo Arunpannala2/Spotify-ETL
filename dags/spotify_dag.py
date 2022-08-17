@@ -10,9 +10,9 @@ default_args = {
     'start_date' : days_ago(2022, 8, 17, 14, 00, 00), #year,month,day,hour,minutes,seconds
     'email' : ['arunpannala12@gmail.com']
     'email_on_failure' : False,
-	'email_on_retry' : False, 
-	'retries' : 1,
-	'retry_delay' : timedelta(minutes = 1)
+    'email_on_retry' : False, 
+    'retries' : 1,
+    'retry_delay' : timedelta(minutes = 1)
 }
 
 dag = DAG(
