@@ -3,9 +3,6 @@ import pandas as pd
 from sqlalchemy.orm import sessionmaker
 import sqlite3
 
-if data_validation(song_df):
-        print("Data valid, Load Data")
-
     #Load Data
     engine = sqlalchemy.create_engine(DATABASE_LOCATION)
     conn = sqlite3.connect('my_played_tracks.sqlite')
