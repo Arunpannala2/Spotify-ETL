@@ -15,4 +15,6 @@ def data_validation(df: pd.DataFrame) -> bool:
     #Null Check
     if df.isnull().values.any():
         raise Exception("Null Values Found. Terminate Exception")
+        
+    return True
     
